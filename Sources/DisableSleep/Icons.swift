@@ -7,9 +7,9 @@ enum Icons {
         let data = Data(base64Encoded: base64)!
         let image = NSImage(data: data)!
 
-        let targetHeight: CGFloat = 18
+        let targetWidth: CGFloat = 24
         let aspect = image.size.width / image.size.height
-        image.size = NSSize(width: targetHeight * aspect, height: targetHeight)
+        image.size = NSSize(width: targetWidth, height: targetWidth / aspect)
         image.isTemplate = true
         return image
     }

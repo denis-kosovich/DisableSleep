@@ -9,6 +9,7 @@ mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp .build/release/DisableSleep "$APP/Contents/MacOS/DisableSleep"
 chmod +x "$APP/Contents/MacOS/DisableSleep"
 cp Resources/Info.plist "$APP/Contents/Info.plist"
+cp Resources/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 
 echo "Built $APP"
 
